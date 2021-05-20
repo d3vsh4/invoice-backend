@@ -150,7 +150,7 @@ router.post('/login/account', async (req, res) => {
     access = 'guest';
 });
 
-router.get('/login/outLogin', (req, res) => {
+router.post('/login/outLogin', (req, res) => {
   access = '';
   res.send({ data: {}, success: true });
 })
