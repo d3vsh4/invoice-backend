@@ -11,7 +11,7 @@ const waitTime = (time = 100) => {
 };
 
 async function getFakeCaptcha(req, res) {
-  await waitTime(2000);
+  // await waitTime(2000);
   return res.json('captcha-xxx');
 }
 
@@ -113,7 +113,7 @@ router.get('/users', (res, req) => {
 
 router.post('/login/account', async (req, res) => {
   const { password, username, type } = req.body;
-    await waitTime(2000);
+    // await waitTime(2000);
     if (password === '123' && username === 'pksharma') {
       res.send({
         status: 'ok',
