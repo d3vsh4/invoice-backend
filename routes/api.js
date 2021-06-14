@@ -114,13 +114,13 @@ router.get('/users', (res, req) => {
 router.post('/login/account', async (req, res) => {
   const { password, username, type } = req.body;
     // await waitTime(2000);
-    if (password === '123' && username === 'pksharma') {
+    if (password === "440" && username === "vks") {
       res.send({
-        status: 'ok',
+        status: "ok",
         type,
-        currentAuthority: 'admin',
+        currentAuthority: "admin",
       });
-      access = 'admin';
+      access = "admin";
       return;
     }
     if (password === 'ant.design' && username === 'user') {
